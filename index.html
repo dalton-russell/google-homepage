@@ -8,17 +8,47 @@
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                margin-top: auto;
-                margin-bottom: auto;
             }
             #search {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
             }
+            ul {
+                list-style-type: none;
+                margin: 10;
+                padding: 0;
+                overflow: hidden;
+                font-family: arial,sans-serif;
+                font-size: 13px;
+            }
+            li {
+                float: left;
+                display: block;
+                padding: 8px;
+            }
+            li:hover {
+                text-decoration: underline;
+            }
+            li.button {
+                display:inline-block;
+                color: white;
+                background-color: #4285f4;
+                text-decoration: none;
+            }
         </style>
     </head>
     <body>
+        <nav>
+            <ul>
+                <li>About</li>
+                <li>Store</li>      
+                <li style ="float:right" class ="button">Sign In</li>
+                <li style ="float:right"><!-- Add apps button-->Apps</li>
+                <li style ="float:right">Images</li>
+                <li style = "float:right">Gmail</li>
+            </ul>
+        </nav>
         
         <img id="logo" src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
         
