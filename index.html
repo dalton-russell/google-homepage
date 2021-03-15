@@ -9,11 +9,21 @@
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+                padding-top: 140px;
+                padding-bottom: 30px;
             }
-            #search {
+            input[type=text] {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+                border-radius: 20px;
+                width: 40%;
+                height: 32px;
+                border: 1px solid #ccc;
+                resize: none;
+                background-color: white;
+                background-image: 
+                
             }
             ul {
                 list-style-type: none;
@@ -44,6 +54,15 @@
                 position: relative;
                 bottom: 5px;
             }
+            footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                background-color: #f2f2f2;
+                left: 0;
+                height: 45px;
+                
+            }
             
         </style>
     </head>
@@ -58,11 +77,24 @@
                 <li style = "float:right">Gmail</li>
             </ul>
         </nav>
-        
-        <img id="logo" src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-        
-        <form>
-            <input type="text" id="search">
-        </form>
+        <div>
+            <img id="logo" src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+
+        </div>
+        <div>
+            <form>
+                <input type="text" >
+            </form>
+        </div>
+        <footer>
+            <ul>
+                <li>Advertising</li>
+                <li>Business</li>
+                <li>How Search Works</li>
+                <li style="float:right">Settings</li>
+                <li style="float:right">Terms</li>
+                <li style="float:right">Privacy</li>
+            </ul>
+        </footer>
     </body>
 </html>
