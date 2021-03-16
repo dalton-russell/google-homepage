@@ -12,7 +12,8 @@
                 padding-top: 140px;
                 padding-bottom: 30px;
             }
-            input[type=text] {
+            
+            input[type=none ] {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -22,7 +23,8 @@
                 border: 1px solid #ccc;
                 resize: none;
                 background-color: white;
-                background-image: 
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                
                 
             }
             ul {
@@ -63,6 +65,32 @@
                 height: 45px;
                 
             }
+            .input-container {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 20px;
+                width: 40%;
+                height: 40px;
+                border: 1px solid #ccc;
+                resize: none;
+                background-color: white;
+                
+            }
+            .icon {
+                padding: 10px;
+                color:#9AA0A6;
+                min-width: 40px;
+                text-align: center;
+                position: relative;
+                
+                
+            }
+            .input-field {
+                width: 100%;
+                padding: 10px;
+                outline: none;
+            }
             
         </style>
     </head>
@@ -83,7 +111,10 @@
         </div>
         <div>
             <form>
-                <input type="text" >
+                <div class="input-container" type="text">
+                    <i class ="material-icons icon">search</i>
+                    
+                </div>
             </form>
         </div>
         <footer>
