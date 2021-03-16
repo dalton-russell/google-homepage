@@ -55,11 +55,12 @@
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 20px;
-                width: 40%;
+                width: 550px;
                 height: 40px;
                 border: 1px solid #ccc;
                 resize: none;
                 background-color: white;
+                
                 
             }
             .input-container:hover{
@@ -73,18 +74,55 @@
                 position: relative;    
             }
             .input-field {
-                width: 100%;
+                width: 550px;
                 padding: 10px;
                 outline: none;
                 border: none;
                 background: transparent;
+                position: relative;
+                right: 50px;
             }
             .voice {
                 position: relative;
-                left: 400px;
+                left: 450px;
                 width: 30px;
                 height: 30px;
                 top: 5px;
+                
+            }
+            .voice:hover {
+                cursor: pointer;
+            }
+            .buttons {
+                margin: 0;
+                position: absolute;
+                top: 420px;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                
+            }
+            .reset-style {
+                padding: 0;
+                border: none;
+                font-family: arial,sans-serif;
+                color: #5F6368;
+                background-color: #f2f2f2;
+                cursor: pointer;
+                padding: 0 16px;
+                height: 36px;
+                font-size: 14px;
+                margin: 4px;
+            }
+            .reset-style:hover {
+                
+                color: black;
+                border: 1px lightgrey solid;
+                
+            }
+            .footer {
+                position: relative;
+                bottom: 6px;
             }
         </style>
     </head>
@@ -112,8 +150,12 @@
                 </div>
             </form>
         </div>
-        <footer>
-            <ul>
+        <div class="buttons">
+            <button class="reset-style">Google Search</button>
+            <button class="reset-style">I'm Feeling Lucky</button>
+        </div>
+        <footer >
+            <ul class="footer">
                 <li>Advertising</li>
                 <li>Business</li>
                 <li>How Search Works</li>
